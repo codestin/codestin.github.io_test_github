@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: My Chosen Word for 2020
 permalink: /word/
 ---
