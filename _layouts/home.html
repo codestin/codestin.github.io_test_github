@@ -7,11 +7,10 @@
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
       {{ content }}
     </div>
-
-    <div class="my-6">
-      {% include projects.html %}
-    </div>
-
+      <div class="my-6">
+        {% include thoughts.html %}
+      </div>
+    
     {% if site.topics %}
       <div class="my-6">
         {% include interests.html %}
@@ -19,9 +18,10 @@
     {% endif %}
 
     {% unless posts_total == 0 %}
-      <div class="my-6">
-        {% include thoughts.html %}
-      </div>
+    <div class="my-6">
+      {% include projects.html %}
+    </div>
+
     {% endunless %}
   </div>
 {% else %}
